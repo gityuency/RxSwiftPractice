@@ -7,19 +7,30 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        self .button_1(UIButton())
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    
+    @IBAction func button_1(_ sender: UIButton) {
+        
+        let vc = ViewController_1()
+        navigationController?.pushViewController(vc, animated: true)
+        
+        
     }
-
-
+    
+    
+    
 }
 
