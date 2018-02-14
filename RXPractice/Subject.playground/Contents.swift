@@ -27,6 +27,8 @@ subject.onNext("发送了一条消息 A")
 sub1.dispose() //取消了订阅 , 将不再收到任何消息
 
 
+//// OB 这种东西, 在取消订阅会导致他被回收掉, 资源结束, 或者发生错误, 也会导致OB 被取消订阅, 被回收
+
 
 let sub2 = subject.subscribe(onNext: { (mesage) in
     print("第二个收音机: \(mesage)")
@@ -54,22 +56,6 @@ let customSub = stringVariable.asObservable().subscribe{
 stringVariable.value = "重新赋值"  //这其实就是一个 onNext 事件, 在这个事件之后, 就会自动调用 onCompleted 事件
 //直接就能拿到值
 print("\(stringVariable.value)")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
