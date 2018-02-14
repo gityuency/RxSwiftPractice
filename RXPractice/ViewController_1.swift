@@ -7,11 +7,45 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+
+
+// 表示我们的一些请求的结果
+enum Result {
+    case ok(message: String)
+    case empty
+    case failed(message: String)
+}
+
 
 class ViewController_1: UIViewController {
 
+    @IBOutlet var userNameTF: UITextField!
+    
+    @IBOutlet var usernamelabel: UILabel!
+
+    
+
+    
+    let disposeBag = DisposeBag()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
+        
+        
+        let viewModel = RegisterViewModel()
+        
+        userNameTF.rx.text.orEmpty.bind(to: viewModel.username).disposed(by: disposeBag)
+        
+
+        
     }
+    
+    
+    
 }

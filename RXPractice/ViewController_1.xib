@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController_1" customModule="RXPractice" customModuleProvider="target">
             <connections>
+                <outlet property="userNameTF" destination="fSR-9T-dMe" id="ZGS-CL-TRA"/>
+                <outlet property="usernamelabel" destination="qEr-xd-71b" id="8a3-jb-j50"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,9 +21,41 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqq-Ki-jxW">
+                    <rect key="frame" x="10" y="100" width="52" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fSR-9T-dMe">
+                    <rect key="frame" x="82" y="90" width="273" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="TiZ-gU-f8y"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里是提示信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEr-xd-71b">
+                    <rect key="frame" x="82" y="140" width="121.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fSR-9T-dMe" secondAttribute="trailing" constant="20" id="238-w5-qcZ"/>
+                <constraint firstItem="qEr-xd-71b" firstAttribute="leading" secondItem="fSR-9T-dMe" secondAttribute="leading" id="8Ok-fd-Axg"/>
+                <constraint firstItem="fSR-9T-dMe" firstAttribute="centerY" secondItem="vqq-Ki-jxW" secondAttribute="centerY" id="KK4-xb-fIl"/>
+                <constraint firstItem="qEr-xd-71b" firstAttribute="top" secondItem="fSR-9T-dMe" secondAttribute="top" constant="50" id="UMF-F2-ECj"/>
+                <constraint firstItem="vqq-Ki-jxW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="b2U-dq-eO6"/>
+                <constraint firstItem="fSR-9T-dMe" firstAttribute="leading" secondItem="vqq-Ki-jxW" secondAttribute="trailing" constant="20" id="fVK-OP-BGW"/>
+                <constraint firstItem="vqq-Ki-jxW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="nUv-sq-xQv"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-167" y="-28"/>
+            <point key="canvasLocation" x="-4" y="-28"/>
         </view>
     </objects>
 </document>
