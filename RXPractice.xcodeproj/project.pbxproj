@@ -70,13 +70,21 @@
 				1C8204A02032E52D00C0A1A6 /* CreateOperator.playground */,
 				1C0878322032DAEB00E8A660 /* Blank.playground */,
 				1C0878192032AA8200E8A660 /* AppDelegate.swift */,
-				1C08781B2032AA8200E8A660 /* ViewController.swift */,
 				1C08781D2032AA8200E8A660 /* Main.storyboard */,
 				1C0878202032AA8200E8A660 /* Assets.xcassets */,
 				1C0878222032AA8200E8A660 /* LaunchScreen.storyboard */,
 				1C0878252032AA8200E8A660 /* Info.plist */,
+				1CE9891A20689AEE00283534 /* One */,
 			);
 			path = RXPractice;
+			sourceTree = "<group>";
+		};
+		1CE9891A20689AEE00283534 /* One */ = {
+			isa = PBXGroup;
+			children = (
+				1C08781B2032AA8200E8A660 /* ViewController.swift */,
+			);
+			path = One;
 			sourceTree = "<group>";
 		};
 		90CCDB398B6D123A710F9B8E /* Frameworks */ = {
