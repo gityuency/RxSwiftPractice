@@ -15,7 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet var tableview: UITableView!
     
     
-    let myArray = ["示例代码, 简单实用表格 使用 RxSwift 进行改造（响应式编程）"]
+    let myArray = ["示例代码, 简单实用表格 使用 RxSwift 进行改造（响应式编程）",
+                   "Observable介绍、创建可观察序列",
+                   ]
     
     
     
@@ -47,10 +49,17 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        var vc = UIViewController()
+        
         if indexPath.row == 0 {
-            let vc = Vc_TV_In_One()
-            navigationController?.pushViewController(vc, animated: true)
+            vc = Vc_TV_In_One()
+        } else if indexPath.row == 1 {
+            vc = Vc_2_In_One()
         }
+        
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     
