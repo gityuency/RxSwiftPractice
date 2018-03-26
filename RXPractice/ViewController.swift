@@ -16,21 +16,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        self .button_1(UIButton())
-        
     }
-    
-    
-    
-    @IBAction func button_1(_ sender: UIButton) {
-        
-        let vc = ViewController_1()
-        navigationController?.pushViewController(vc, animated: true)
-        
-        
-    }
-    
-    
-    
 }
 

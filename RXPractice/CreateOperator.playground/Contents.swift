@@ -29,7 +29,11 @@ let customOB = Observable<Int>.create { (observer) -> Disposable in
 }
 
 
-
+customOB.asObservable().subscribe(onNext: { (inn) in
+    
+    print("收的到 \(inn)")
+    
+})
 
 /// 然后在这里自己订阅 上面 创建的事件序列
 let bag = DisposeBag()
