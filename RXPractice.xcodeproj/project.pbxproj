@@ -15,6 +15,8 @@
 		1C7F191F2068C078004A9060 /* Vc_3_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F191E2068C078004A9060 /* Vc_3_In_One.swift */; };
 		1C7F19212068C60F004A9060 /* Vc_5_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F19202068C60F004A9060 /* Vc_5_In_One.swift */; };
 		1C7F19232068CAAF004A9060 /* PrintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F19222068CAAF004A9060 /* PrintConfig.swift */; };
+		1C7F19282068D155004A9060 /* Vc_6_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F19262068D155004A9060 /* Vc_6_In_One.swift */; };
+		1C7F19292068D155004A9060 /* Vc_6_In_One.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C7F19272068D155004A9060 /* Vc_6_In_One.xib */; };
 		1CE9891C20689BE100283534 /* Vc_TV_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9891B20689BE100283534 /* Vc_TV_In_One.swift */; };
 		1CE9891E2068A4F400283534 /* Vc_2_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9891D2068A4F400283534 /* Vc_2_In_One.swift */; };
 		3671544997038121C19879E4 /* Pods_RXPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB6EF705F4815A56E257D80 /* Pods_RXPractice.framework */; };
@@ -32,6 +34,8 @@
 		1C7F191E2068C078004A9060 /* Vc_3_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_3_In_One.swift; sourceTree = "<group>"; };
 		1C7F19202068C60F004A9060 /* Vc_5_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_5_In_One.swift; sourceTree = "<group>"; };
 		1C7F19222068CAAF004A9060 /* PrintConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintConfig.swift; sourceTree = "<group>"; };
+		1C7F19262068D155004A9060 /* Vc_6_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_6_In_One.swift; sourceTree = "<group>"; };
+		1C7F19272068D155004A9060 /* Vc_6_In_One.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Vc_6_In_One.xib; sourceTree = "<group>"; };
 		1C8204A02032E52D00C0A1A6 /* CreateOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CreateOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1C8204A12032EBDB00C0A1A6 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1CCA2B252034053A00363298 /* Operators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Operators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -98,6 +102,8 @@
 				1CE9891D2068A4F400283534 /* Vc_2_In_One.swift */,
 				1C7F191E2068C078004A9060 /* Vc_3_In_One.swift */,
 				1C7F19202068C60F004A9060 /* Vc_5_In_One.swift */,
+				1C7F19262068D155004A9060 /* Vc_6_In_One.swift */,
+				1C7F19272068D155004A9060 /* Vc_6_In_One.xib */,
 			);
 			path = One;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C0878242032AA8200E8A660 /* LaunchScreen.storyboard in Resources */,
+				1C7F19292068D155004A9060 /* Vc_6_In_One.xib in Resources */,
 				1C0878212032AA8200E8A660 /* Assets.xcassets in Resources */,
 				1C08781F2032AA8200E8A660 /* Main.storyboard in Resources */,
 			);
@@ -243,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C08781C2032AA8200E8A660 /* ViewController.swift in Sources */,
+				1C7F19282068D155004A9060 /* Vc_6_In_One.swift in Sources */,
 				1C7F191F2068C078004A9060 /* Vc_3_In_One.swift in Sources */,
 				1C7F19212068C60F004A9060 /* Vc_5_In_One.swift in Sources */,
 				1C7F19232068CAAF004A9060 /* PrintConfig.swift in Sources */,
