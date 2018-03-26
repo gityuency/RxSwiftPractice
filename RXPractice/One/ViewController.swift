@@ -19,7 +19,8 @@ class ViewController: UIViewController {
                    "Observable介绍、创建可观察序列",
                    "Observable订阅、事件监听、订阅销毁",
                    "Swift - RxSwift的使用详解5（观察者1： AnyObserver、Binder）",
-                   "Swift - RxSwift的使用详解6（观察者2： 自定义可绑定属性）"
+                   "Swift - RxSwift的使用详解6（观察者2： 自定义可绑定属性）",
+                   "Swift - RxSwift的使用详解7（Subjects、Variables）"
                    ]
     
     
@@ -65,6 +66,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             vc = Vc_5_In_One()
         } else if indexPath.row == 4 {
             vc = Vc_6_In_One()
+        } else if indexPath.row == 5 {
+            vc = Vc_7_In_One()
         }
         
         
