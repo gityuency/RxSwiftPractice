@@ -38,4 +38,15 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.detailTextLabel?.text = "\(indexPath.row)"
         return cell;
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == 0 {
+            let vc = Vc_TV_In_One()
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    
+    
 }
