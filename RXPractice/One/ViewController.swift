@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     
     @IBOutlet var tableview: UITableView!
     
+    
+    let myArray = ["示例代码, 简单实用表格 使用 RxSwift 进行改造（响应式编程）"]
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,12 +34,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return myArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "UITableViewCellID")
-        cell.textLabel?.text = "要的"
+        cell.textLabel?.text = myArray[indexPath.row]
+        cell.textLabel?.numberOfLines = 0
         cell.detailTextLabel?.text = "\(indexPath.row)"
         return cell;
     }
