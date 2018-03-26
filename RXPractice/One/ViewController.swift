@@ -20,7 +20,9 @@ class ViewController: UIViewController {
                    "Observable订阅、事件监听、订阅销毁",
                    "Swift - RxSwift的使用详解5（观察者1： AnyObserver、Binder）",
                    "Swift - RxSwift的使用详解6（观察者2： 自定义可绑定属性）",
-                   "Swift - RxSwift的使用详解7（Subjects、Variables）"
+                   "Swift - RxSwift的使用详解7（Subjects、Variables）",
+                   "Swift - RxSwift的使用详解8（变换操作符：buffer、map、flatMap、scan等）",
+                   
                    ]
     
     
@@ -30,7 +32,19 @@ class ViewController: UIViewController {
         
         tableview.delegate = self
         tableview.dataSource = self
+        
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        /* 让表格滚动到底部 */
+        let secon = 0 //最后一个分组的索引（0开始，如果没有分组则为0）
+        let rows = myArray.count - 1 //最后一个分组最后一条项目的索引
+        let indexPath = IndexPath(row: rows, section: secon)
+        tableview.scrollToRow(at: indexPath, at:.bottom, animated: true)
+    }
+    
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
@@ -68,6 +82,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             vc = Vc_6_In_One()
         } else if indexPath.row == 5 {
             vc = Vc_7_In_One()
+        } else if indexPath.row == 6 {
+            vc = Vc_8_In_One()
         }
         
         
