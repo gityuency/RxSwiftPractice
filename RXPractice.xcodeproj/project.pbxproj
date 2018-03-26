@@ -12,6 +12,7 @@
 		1C08781F2032AA8200E8A660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C08781D2032AA8200E8A660 /* Main.storyboard */; };
 		1C0878212032AA8200E8A660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0878202032AA8200E8A660 /* Assets.xcassets */; };
 		1C0878242032AA8200E8A660 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0878222032AA8200E8A660 /* LaunchScreen.storyboard */; };
+		1C7F191F2068C078004A9060 /* Vc_3_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F191E2068C078004A9060 /* Vc_3_In_One.swift */; };
 		1CE9891C20689BE100283534 /* Vc_TV_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9891B20689BE100283534 /* Vc_TV_In_One.swift */; };
 		1CE9891E2068A4F400283534 /* Vc_2_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9891D2068A4F400283534 /* Vc_2_In_One.swift */; };
 		3671544997038121C19879E4 /* Pods_RXPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB6EF705F4815A56E257D80 /* Pods_RXPractice.framework */; };
@@ -26,6 +27,7 @@
 		1C0878232032AA8200E8A660 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C0878252032AA8200E8A660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C0878322032DAEB00E8A660 /* Blank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Blank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1C7F191E2068C078004A9060 /* Vc_3_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_3_In_One.swift; sourceTree = "<group>"; };
 		1C8204A02032E52D00C0A1A6 /* CreateOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CreateOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1C8204A12032EBDB00C0A1A6 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1CCA2B252034053A00363298 /* Operators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Operators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -89,6 +91,7 @@
 				1C08781B2032AA8200E8A660 /* ViewController.swift */,
 				1CE9891B20689BE100283534 /* Vc_TV_In_One.swift */,
 				1CE9891D2068A4F400283534 /* Vc_2_In_One.swift */,
+				1C7F191E2068C078004A9060 /* Vc_3_In_One.swift */,
 			);
 			path = One;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C08781C2032AA8200E8A660 /* ViewController.swift in Sources */,
+				1C7F191F2068C078004A9060 /* Vc_3_In_One.swift in Sources */,
 				1CE9891E2068A4F400283534 /* Vc_2_In_One.swift in Sources */,
 				1C08781A2032AA8200E8A660 /* AppDelegate.swift in Sources */,
 				1CE9891C20689BE100283534 /* Vc_TV_In_One.swift in Sources */,

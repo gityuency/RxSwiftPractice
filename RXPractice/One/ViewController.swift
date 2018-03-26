@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     let myArray = ["示例代码, 简单实用表格 使用 RxSwift 进行改造（响应式编程）",
                    "Observable介绍、创建可观察序列",
+                   "Observable订阅、事件监听、订阅销毁",
                    ]
     
     
@@ -55,6 +56,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             vc = Vc_TV_In_One()
         } else if indexPath.row == 1 {
             vc = Vc_2_In_One()
+        } else if indexPath.row == 2 {
+            vc = Vc_3_In_One()
         }
         
         
