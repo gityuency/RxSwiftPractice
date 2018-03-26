@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     let myArray = ["示例代码, 简单实用表格 使用 RxSwift 进行改造（响应式编程）",
                    "Observable介绍、创建可观察序列",
                    "Observable订阅、事件监听、订阅销毁",
+                   "Swift - RxSwift的使用详解5（观察者1： AnyObserver、Binder）",
                    ]
     
     
@@ -44,7 +45,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "UITableViewCellID")
         cell.textLabel?.text = myArray[indexPath.row]
         cell.textLabel?.numberOfLines = 0
-        cell.detailTextLabel?.text = "\(indexPath.row)"
+        cell.detailTextLabel?.text = "我们忽略这些细节"
+        cell.imageView?.image = UIImage(named: "a01.jpg")
         return cell;
     }
     
@@ -58,6 +60,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             vc = Vc_2_In_One()
         } else if indexPath.row == 2 {
             vc = Vc_3_In_One()
+        } else if indexPath.row == 3 {
+            vc = Vc_5_In_One()
         }
         
         
