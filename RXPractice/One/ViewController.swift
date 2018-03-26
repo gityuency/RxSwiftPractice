@@ -23,7 +23,7 @@ class ViewController: UIViewController {
                    "Swift - RxSwift的使用详解7（Subjects、Variables）",
                    "Swift - RxSwift的使用详解8（变换操作符：buffer、map、flatMap、scan等）",
                    "Swift - RxSwift的使用详解9（过滤操作符：filter、take、skip等）",
-                   
+                   "Swift - RxSwift的使用详解10（条件和布尔操作符：amb、takeWhile、skipWhile等）",
                    ]
     
     
@@ -87,6 +87,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             vc = Vc_8_In_One()
         } else if indexPath.row == 7 {
             vc = Vc_9_In_One()
+        } else if indexPath.row == 8 {
+            vc = Vc_10_In_One()
         }
         
         
