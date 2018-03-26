@@ -22,6 +22,7 @@
 		1C7F192F2068F025004A9060 /* Vc_9_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F192E2068F025004A9060 /* Vc_9_In_One.swift */; };
 		1C7F19312068F858004A9060 /* Vc_10_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F19302068F858004A9060 /* Vc_10_In_One.swift */; };
 		1C7F19332068FE89004A9060 /* Vc_11_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F19322068FE89004A9060 /* Vc_11_In_One.swift */; };
+		1C7F1935206905E6004A9060 /* Vc_12_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F1934206905E6004A9060 /* Vc_12_In_One.swift */; };
 		1CE9891C20689BE100283534 /* Vc_TV_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9891B20689BE100283534 /* Vc_TV_In_One.swift */; };
 		1CE9891E2068A4F400283534 /* Vc_2_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9891D2068A4F400283534 /* Vc_2_In_One.swift */; };
 		3671544997038121C19879E4 /* Pods_RXPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB6EF705F4815A56E257D80 /* Pods_RXPractice.framework */; };
@@ -46,6 +47,7 @@
 		1C7F192E2068F025004A9060 /* Vc_9_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_9_In_One.swift; sourceTree = "<group>"; };
 		1C7F19302068F858004A9060 /* Vc_10_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_10_In_One.swift; sourceTree = "<group>"; };
 		1C7F19322068FE89004A9060 /* Vc_11_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_11_In_One.swift; sourceTree = "<group>"; };
+		1C7F1934206905E6004A9060 /* Vc_12_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_12_In_One.swift; sourceTree = "<group>"; };
 		1C8204A02032E52D00C0A1A6 /* CreateOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CreateOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1C8204A12032EBDB00C0A1A6 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1CCA2B252034053A00363298 /* Operators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Operators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -119,6 +121,7 @@
 				1C7F192E2068F025004A9060 /* Vc_9_In_One.swift */,
 				1C7F19302068F858004A9060 /* Vc_10_In_One.swift */,
 				1C7F19322068FE89004A9060 /* Vc_11_In_One.swift */,
+				1C7F1934206905E6004A9060 /* Vc_12_In_One.swift */,
 			);
 			path = One;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				1C7F19332068FE89004A9060 /* Vc_11_In_One.swift in Sources */,
 				1C7F192B2068E02D004A9060 /* Vc_7_In_One.swift in Sources */,
 				1C7F19232068CAAF004A9060 /* PrintConfig.swift in Sources */,
+				1C7F1935206905E6004A9060 /* Vc_12_In_One.swift in Sources */,
 				1C7F192F2068F025004A9060 /* Vc_9_In_One.swift in Sources */,
 				1CE9891E2068A4F400283534 /* Vc_2_In_One.swift in Sources */,
 				1C08781A2032AA8200E8A660 /* AppDelegate.swift in Sources */,

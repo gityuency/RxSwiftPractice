@@ -25,6 +25,7 @@ class ViewController: UIViewController {
                    "Swift - RxSwift的使用详解9（过滤操作符：filter、take、skip等）",
                    "Swift - RxSwift的使用详解10（条件和布尔操作符：amb、takeWhile、skipWhile等）",
                    "Swift - RxSwift的使用详解11（结合操作符：startWith、merge、zip等）",
+                   "Swift - RxSwift的使用详解12（算数&聚合操作符：toArray、reduce、concat）",
                    ]
     
     
@@ -92,6 +93,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             vc = Vc_10_In_One()
         } else if indexPath.row == 9 {
             vc = Vc_11_In_One()
+        } else if indexPath.row == 10 {
+            vc = Vc_12_In_One()
         }
         
         
