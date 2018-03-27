@@ -12,18 +12,8 @@ class ViewController_2: UIViewController {
 
     @IBOutlet var tableview: UITableView!
     
-    let myArray = ["示例代码, 简单实用表格 使用 RxSwift 进行改造（响应式编程）",
-                   "Observable介绍、创建可观察序列",
-                   "Observable订阅、事件监听、订阅销毁",
-                   "Swift - RxSwift的使用详解5（观察者1： AnyObserver、Binder）",
-                   "Swift - RxSwift的使用详解6（观察者2： 自定义可绑定属性）",
-                   "Swift - RxSwift的使用详解7（Subjects、Variables）",
-                   "Swift - RxSwift的使用详解8（变换操作符：buffer、map、flatMap、scan等）",
-                   "Swift - RxSwift的使用详解9（过滤操作符：filter、take、skip等）",
-                   "Swift - RxSwift的使用详解10（条件和布尔操作符：amb、takeWhile、skipWhile等）",
-                   "Swift - RxSwift的使用详解11（结合操作符：startWith、merge、zip等）",
-                   "Swift - RxSwift的使用详解12（算数&聚合操作符：toArray、reduce、concat）",
-                   "Swift - RxSwift的使用详解13（连接操作符：connect、publish、replay、multicast）",
+    let myArray = ["Swift - RxSwift的使用详解21（UI控件扩展1：UILabel）",
+                   
                    ]
     
     override func viewDidLoad() {
@@ -67,7 +57,7 @@ extension ViewController_2: UITableViewDataSource, UITableViewDelegate {
         var vc = UIViewController()
         
         if indexPath.row == 0 {
-//            vc = Vc_TV_In_One()
+            vc = Vc_21_In_Two()
         } else if indexPath.row == 1 {
 //            vc = Vc_2_In_One()
         } else if indexPath.row == 2 {
