@@ -18,6 +18,7 @@ class ViewController_3: UIViewController {
     let myArray = [
         "理解了Reactive Programming的编程思想之后，在这段视频里，我们使用RxSwift来实现上个视频中“筛选用户输入偶数”的例子，以此来进一步了解Reactive Programming中的各种思想的具体实现。",
         "理解Disposable & DisposeBag",
+        "RxSwift UI交互 - I",
         ]
     
     
@@ -67,7 +68,7 @@ extension ViewController_3: UITableViewDataSource, UITableViewDelegate {
         } else if indexPath.row == 1 {
             vc = Vc_3_2_In_Thr()
         } else if indexPath.row == 2 {
-            //            vc = Vc_3_In_One()
+            vc = Vc_3_3_In_Thr()
         } else if indexPath.row == 3 {
             //            vc = Vc_5_In_One()
         } else if indexPath.row == 4 {
