@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class ViewController_2: UIViewController {
-
+    
     @IBOutlet var tableview: UITableView!
     
     let myArray = ["Swift - RxSwift的使用详解21（UI控件扩展1：UILabel）",
-                   
+                   "Swift - RxSwift的使用详解22（UI控件扩展2：UITextField、UITextView）",
                    ]
     
     override func viewDidLoad() {
@@ -59,27 +61,27 @@ extension ViewController_2: UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 0 {
             vc = Vc_21_In_Two()
         } else if indexPath.row == 1 {
-//            vc = Vc_2_In_One()
+            vc = Vc_22_In_Two()
         } else if indexPath.row == 2 {
-//            vc = Vc_3_In_One()
+            //            vc = Vc_3_In_One()
         } else if indexPath.row == 3 {
-//            vc = Vc_5_In_One()
+            //            vc = Vc_5_In_One()
         } else if indexPath.row == 4 {
-//            vc = Vc_6_In_One()
+            //            vc = Vc_6_In_One()
         } else if indexPath.row == 5 {
-//            vc = Vc_7_In_One()
+            //            vc = Vc_7_In_One()
         } else if indexPath.row == 6 {
-//            vc = Vc_8_In_One()
+            //            vc = Vc_8_In_One()
         } else if indexPath.row == 7 {
-//            vc = Vc_9_In_One()
+            //            vc = Vc_9_In_One()
         } else if indexPath.row == 8 {
-//            vc = Vc_10_In_One()
+            //            vc = Vc_10_In_One()
         } else if indexPath.row == 9 {
-//            vc = Vc_11_In_One()
+            //            vc = Vc_11_In_One()
         } else if indexPath.row == 10 {
-//            vc = Vc_12_In_One()
+            //            vc = Vc_12_In_One()
         } else if indexPath.row == 11 {
-//            vc = Vc_13_In_One()
+            //            vc = Vc_13_In_One()
         }
         
         
