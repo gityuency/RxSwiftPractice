@@ -12,6 +12,9 @@
 		1C08781F2032AA8200E8A660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C08781D2032AA8200E8A660 /* Main.storyboard */; };
 		1C0878212032AA8200E8A660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0878202032AA8200E8A660 /* Assets.xcassets */; };
 		1C0878242032AA8200E8A660 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0878222032AA8200E8A660 /* LaunchScreen.storyboard */; };
+		1C147A67206E0FE800CC542A /* ViewController_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C147A66206E0FE800CC542A /* ViewController_3.swift */; };
+		1C147A6C206E111C00CC542A /* Vc_3_1_In_Thr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C147A6A206E111C00CC542A /* Vc_3_1_In_Thr.swift */; };
+		1C147A6D206E111C00CC542A /* Vc_3_1_In_Thr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C147A6B206E111C00CC542A /* Vc_3_1_In_Thr.xib */; };
 		1C7F191F2068C078004A9060 /* Vc_3_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F191E2068C078004A9060 /* Vc_3_In_One.swift */; };
 		1C7F19212068C60F004A9060 /* Vc_5_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F19202068C60F004A9060 /* Vc_5_In_One.swift */; };
 		1C7F19232068CAAF004A9060 /* PrintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F19222068CAAF004A9060 /* PrintConfig.swift */; };
@@ -41,6 +44,9 @@
 		1C0878232032AA8200E8A660 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C0878252032AA8200E8A660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C0878322032DAEB00E8A660 /* Blank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Blank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1C147A66206E0FE800CC542A /* ViewController_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_3.swift; sourceTree = "<group>"; };
+		1C147A6A206E111C00CC542A /* Vc_3_1_In_Thr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_3_1_In_Thr.swift; sourceTree = "<group>"; };
+		1C147A6B206E111C00CC542A /* Vc_3_1_In_Thr.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Vc_3_1_In_Thr.xib; sourceTree = "<group>"; };
 		1C7F191E2068C078004A9060 /* Vc_3_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_3_In_One.swift; sourceTree = "<group>"; };
 		1C7F19202068C60F004A9060 /* Vc_5_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_5_In_One.swift; sourceTree = "<group>"; };
 		1C7F19222068CAAF004A9060 /* PrintConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintConfig.swift; sourceTree = "<group>"; };
@@ -109,10 +115,21 @@
 				1C0878202032AA8200E8A660 /* Assets.xcassets */,
 				1C0878222032AA8200E8A660 /* LaunchScreen.storyboard */,
 				1C0878252032AA8200E8A660 /* Info.plist */,
+				1C147A65206E0FD200CC542A /* Thr */,
 				1CFA6BE3206A3F8600CE4FDC /* Two */,
 				1CE9891A20689AEE00283534 /* One */,
 			);
 			path = RXPractice;
+			sourceTree = "<group>";
+		};
+		1C147A65206E0FD200CC542A /* Thr */ = {
+			isa = PBXGroup;
+			children = (
+				1C147A66206E0FE800CC542A /* ViewController_3.swift */,
+				1C147A6A206E111C00CC542A /* Vc_3_1_In_Thr.swift */,
+				1C147A6B206E111C00CC542A /* Vc_3_1_In_Thr.xib */,
+			);
+			path = Thr;
 			sourceTree = "<group>";
 		};
 		1CE9891A20689AEE00283534 /* One */ = {
@@ -225,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C147A6D206E111C00CC542A /* Vc_3_1_In_Thr.xib in Resources */,
 				1C0878242032AA8200E8A660 /* LaunchScreen.storyboard in Resources */,
 				1C7F19292068D155004A9060 /* Vc_6_In_One.xib in Resources */,
 				1C0878212032AA8200E8A660 /* Assets.xcassets in Resources */,
@@ -291,6 +309,7 @@
 				1CFA6BE5206A40F900CE4FDC /* ViewController_2.swift in Sources */,
 				1C7F19282068D155004A9060 /* Vc_6_In_One.swift in Sources */,
 				1C7F191F2068C078004A9060 /* Vc_3_In_One.swift in Sources */,
+				1C147A6C206E111C00CC542A /* Vc_3_1_In_Thr.swift in Sources */,
 				1C7F192D2068E721004A9060 /* Vc_8_In_One.swift in Sources */,
 				1C7F19212068C60F004A9060 /* Vc_5_In_One.swift in Sources */,
 				1C7F19312068F858004A9060 /* Vc_10_In_One.swift in Sources */,
@@ -299,6 +318,7 @@
 				1C7F19232068CAAF004A9060 /* PrintConfig.swift in Sources */,
 				1C7F1935206905E6004A9060 /* Vc_12_In_One.swift in Sources */,
 				1C7F192F2068F025004A9060 /* Vc_9_In_One.swift in Sources */,
+				1C147A67206E0FE800CC542A /* ViewController_3.swift in Sources */,
 				1CE9891E2068A4F400283534 /* Vc_2_In_One.swift in Sources */,
 				1C08781A2032AA8200E8A660 /* AppDelegate.swift in Sources */,
 				1CE9891C20689BE100283534 /* Vc_TV_In_One.swift in Sources */,

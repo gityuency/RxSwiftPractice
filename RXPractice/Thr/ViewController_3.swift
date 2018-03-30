@@ -1,25 +1,26 @@
 //
-//  ViewController_2.swift
+//  ViewController_3.swift
 //  RXPractice
 //
-//  Created by yuency on 27/03/2018.
+//  Created by yuency on 30/03/2018.
 //  Copyright © 2018 钉宫理惠. All rights reserved.
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
 
-class ViewController_2: UIViewController {
+class ViewController_3: UIViewController {
     
     @IBOutlet var tableview: UITableView!
     
-    let myArray = ["Swift - RxSwift的使用详解21（UI控件扩展1：UILabel）",
-                   "Swift - RxSwift的使用详解22（UI控件扩展2：UITextField、UITextView）",
-                   ]
+    
+    let myArray = [
+        "理解了Reactive Programming的编程思想之后，在这段视频里，我们使用RxSwift来实现上个视频中“筛选用户输入偶数”的例子，以此来进一步了解Reactive Programming中的各种思想的具体实现。",
+        ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableview.delegate = self
         tableview.dataSource = self
     }
@@ -35,7 +36,7 @@ class ViewController_2: UIViewController {
 }
 
 
-extension ViewController_2: UITableViewDataSource, UITableViewDelegate {
+extension ViewController_3: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -46,10 +47,10 @@ extension ViewController_2: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "ViewController_2_CELL_ID")
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "ViewController_3_CELL_ID")
         cell.textLabel?.text = myArray[indexPath.row]
         cell.textLabel?.numberOfLines = 0
-        cell.detailTextLabel?.text = "被剥削了"
+        cell.detailTextLabel?.text = "今天被剥削了......."
         cell.imageView?.image = UIImage(named: "a10.jpg")
         return cell;
     }
@@ -59,9 +60,9 @@ extension ViewController_2: UITableViewDataSource, UITableViewDelegate {
         var vc = UIViewController()
         
         if indexPath.row == 0 {
-            vc = Vc_21_In_Two()
+            vc = Vc_3_1_In_Thr()
         } else if indexPath.row == 1 {
-            vc = Vc_22_In_Two()
+            //            vc = Vc_22_In_Two()
         } else if indexPath.row == 2 {
             //            vc = Vc_3_In_One()
         } else if indexPath.row == 3 {
@@ -92,3 +93,4 @@ extension ViewController_2: UITableViewDataSource, UITableViewDelegate {
     
     
 }
+
