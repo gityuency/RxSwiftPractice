@@ -74,13 +74,13 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="axr-TK-SeX">
-                    <rect key="frame" x="18" y="469" width="339" height="31"/>
+                    <rect key="frame" x="58" y="469" width="299" height="31"/>
                 </slider>
                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="HhO-Lk-yao">
                     <rect key="frame" x="261" y="519" width="94" height="29"/>
                 </stepper>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_1" translatesAutoresizingMaskIntoConstraints="NO" id="hZq-pK-vIE">
-                    <rect key="frame" x="174.5" y="519" width="26" height="27"/>
+                    <rect key="frame" x="194.5" y="519" width="26" height="27"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="27" id="fZl-Ia-bbU"/>
                     </constraints>
@@ -110,7 +110,7 @@
                 <constraint firstItem="VEa-3r-AMc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="VVW-lX-74B"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4cm-mR-14y" secondAttribute="bottom" constant="20" id="WAx-Vy-7sx"/>
                 <constraint firstItem="REl-8U-xq6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="YrW-Vz-cHD"/>
-                <constraint firstItem="axr-TK-SeX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="arz-0s-I3g"/>
+                <constraint firstItem="axr-TK-SeX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="arz-0s-I3g"/>
                 <constraint firstItem="xMD-fY-fyA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="bls-p4-Lez"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HhO-Lk-yao" secondAttribute="trailing" constant="20" id="f7b-XS-llk"/>
                 <constraint firstItem="jUv-pN-3dl" firstAttribute="leading" secondItem="xMD-fY-fyA" secondAttribute="trailing" constant="20" id="fF2-ka-9K9"/>

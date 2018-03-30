@@ -113,5 +113,31 @@ class Vc_3_3_SubVC_1_In_Thr: UIViewController {
             .disposed(by: disposeBag)
         
         
+        
+        //这次我们处理 开关 和 滑动条 的联动功能  这其实是一个双向绑定的过程
+        self.kaiguan.rx.value
+            .map {
+                $0 ? 0.25 : 0  // 把开关的状态转换成为 浮点数
+            }
+            .bind(to: self.huadongitao.rx.value) // 这里就是订阅开关的状态, 并且把收到的值 ,赋值 给 滑动条
+            .disposed(by: disposeBag)
+        
+        self.huadongitao.rx.value
+            .map { shuzhi -> Bool in
+                return shuzhi == 0 ? false : true
+            }
+            .bind(to: self.kaiguan.rx.value)
+            .disposed(by: disposeBag)
+        
+        
+        ///处理加号和图片之间的关系
+        self.jiajian.rx.value
+        .skip(1)   //由于程序一开始加载的时候会执行这段代码, 也就会 走到 subscribe 函数, 就会执行里面的代码, 但是这不是希望看到的, 这里就跳过第一次的订阅,
+        .subscribe(onNext: { zhi in
+            self.tubiaogaodu.constant = CGFloat(zhi - 1)
+        }).disposed(by: disposeBag)
+        
+        
+        
     }
 }
