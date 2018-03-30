@@ -48,6 +48,9 @@
                         <constraint firstAttribute="height" constant="40" id="vst-CD-KoW"/>
                     </constraints>
                     <state key="normal" title="上面都输入合法才能启用按钮"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="Xg0-v4-RKM"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

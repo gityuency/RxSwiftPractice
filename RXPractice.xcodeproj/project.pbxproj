@@ -19,6 +19,8 @@
 		1C147A73206E17BA00CC542A /* Vc_3_2_In_Thr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C147A71206E17BA00CC542A /* Vc_3_2_In_Thr.xib */; };
 		1C147A76206E1BB100CC542A /* Vc_3_3_In_Thr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C147A74206E1BB100CC542A /* Vc_3_3_In_Thr.swift */; };
 		1C147A77206E1BB100CC542A /* Vc_3_3_In_Thr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C147A75206E1BB100CC542A /* Vc_3_3_In_Thr.xib */; };
+		1C147A7A206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C147A78206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.swift */; };
+		1C147A7B206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C147A79206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.xib */; };
 		1C7F191F2068C078004A9060 /* Vc_3_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F191E2068C078004A9060 /* Vc_3_In_One.swift */; };
 		1C7F19212068C60F004A9060 /* Vc_5_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F19202068C60F004A9060 /* Vc_5_In_One.swift */; };
 		1C7F19232068CAAF004A9060 /* PrintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F19222068CAAF004A9060 /* PrintConfig.swift */; };
@@ -55,6 +57,8 @@
 		1C147A71206E17BA00CC542A /* Vc_3_2_In_Thr.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Vc_3_2_In_Thr.xib; sourceTree = "<group>"; };
 		1C147A74206E1BB100CC542A /* Vc_3_3_In_Thr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_3_3_In_Thr.swift; sourceTree = "<group>"; };
 		1C147A75206E1BB100CC542A /* Vc_3_3_In_Thr.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Vc_3_3_In_Thr.xib; sourceTree = "<group>"; };
+		1C147A78206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_3_3_SubVC_1_In_Thr.swift; sourceTree = "<group>"; };
+		1C147A79206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Vc_3_3_SubVC_1_In_Thr.xib; sourceTree = "<group>"; };
 		1C7F191E2068C078004A9060 /* Vc_3_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_3_In_One.swift; sourceTree = "<group>"; };
 		1C7F19202068C60F004A9060 /* Vc_5_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_5_In_One.swift; sourceTree = "<group>"; };
 		1C7F19222068CAAF004A9060 /* PrintConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintConfig.swift; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 				1C147A71206E17BA00CC542A /* Vc_3_2_In_Thr.xib */,
 				1C147A74206E1BB100CC542A /* Vc_3_3_In_Thr.swift */,
 				1C147A75206E1BB100CC542A /* Vc_3_3_In_Thr.xib */,
+				1C147A78206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.swift */,
+				1C147A79206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.xib */,
 			);
 			path = Thr;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 				1C0878242032AA8200E8A660 /* LaunchScreen.storyboard in Resources */,
 				1C7F19292068D155004A9060 /* Vc_6_In_One.xib in Resources */,
 				1C147A77206E1BB100CC542A /* Vc_3_3_In_Thr.xib in Resources */,
+				1C147A7B206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.xib in Resources */,
 				1C147A73206E17BA00CC542A /* Vc_3_2_In_Thr.xib in Resources */,
 				1C0878212032AA8200E8A660 /* Assets.xcassets in Resources */,
 				1C08781F2032AA8200E8A660 /* Main.storyboard in Resources */,
@@ -328,6 +335,7 @@
 				1C147A72206E17BA00CC542A /* Vc_3_2_In_Thr.swift in Sources */,
 				1C7F19212068C60F004A9060 /* Vc_5_In_One.swift in Sources */,
 				1C7F19312068F858004A9060 /* Vc_10_In_One.swift in Sources */,
+				1C147A7A206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.swift in Sources */,
 				1C7F19332068FE89004A9060 /* Vc_11_In_One.swift in Sources */,
 				1C7F192B2068E02D004A9060 /* Vc_7_In_One.swift in Sources */,
 				1C7F19232068CAAF004A9060 /* PrintConfig.swift in Sources */,

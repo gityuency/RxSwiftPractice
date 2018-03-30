@@ -69,10 +69,20 @@ class Vc_3_3_In_Thr: UIViewController {
                 
             }.subscribe(onNext: { ok in
                 
-                self.button.isEnabled = ok
+//                self.button.isEnabled = ok
                 
             }).disposed(by: disposeBag)
 
+        
+    }
+    
+    
+    
+    
+    @IBAction func buttonAction(_ sender: Any) {
+        
+        let vc = Vc_3_3_SubVC_1_In_Thr()
+        navigationController?.pushViewController(vc, animated: true)
         
     }
     
@@ -104,5 +114,12 @@ class InputValidator {
     class func isValidPassword(
         password: String) -> Bool {
         return password.count >= 8
+    }
+    
+    
+    class func isValidDate(date: Date) -> Bool {
+        let calendar = NSCalendar.current
+        let compare = calendar.compare(date, to: Date(), toGranularity: .day)
+        return compare == .orderedAscending
     }
 }
