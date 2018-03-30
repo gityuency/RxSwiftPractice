@@ -25,10 +25,6 @@ class Vc_3_3_In_Thr: UIViewController {
         super.viewDidLoad()
         
         
-        let e = UITextField()
-        
-        let b = UIButton()
-        
         self.emailTF.layer.borderWidth = 1
         self.pwdTF.layer.borderWidth = 1
         
@@ -76,9 +72,7 @@ class Vc_3_3_In_Thr: UIViewController {
                 self.button.isEnabled = ok
                 
             }).disposed(by: disposeBag)
-        
-        
-        
+
         
     }
     
