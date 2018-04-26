@@ -35,6 +35,8 @@
 		1C7F193720690B52004A9060 /* Vc_13_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F193620690B52004A9060 /* Vc_13_In_One.swift */; };
 		1CD6CACD2074B1840089A189 /* Vc_3_4_In_Thr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6CACB2074B1840089A189 /* Vc_3_4_In_Thr.swift */; };
 		1CD6CACE2074B1840089A189 /* Vc_3_4_In_Thr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD6CACC2074B1840089A189 /* Vc_3_4_In_Thr.xib */; };
+		1CD6CAD12074DE3B0089A189 /* VC34inThrCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6CACF2074DE3B0089A189 /* VC34inThrCell.swift */; };
+		1CD6CAD22074DE3B0089A189 /* VC34inThrCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD6CAD02074DE3B0089A189 /* VC34inThrCell.xib */; };
 		1CE9891C20689BE100283534 /* Vc_TV_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9891B20689BE100283534 /* Vc_TV_In_One.swift */; };
 		1CE9891E2068A4F400283534 /* Vc_2_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9891D2068A4F400283534 /* Vc_2_In_One.swift */; };
 		1CFA6BE5206A40F900CE4FDC /* ViewController_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA6BE4206A40F900CE4FDC /* ViewController_2.swift */; };
@@ -78,6 +80,8 @@
 		1CCA2B252034053A00363298 /* Operators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Operators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1CD6CACB2074B1840089A189 /* Vc_3_4_In_Thr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_3_4_In_Thr.swift; sourceTree = "<group>"; };
 		1CD6CACC2074B1840089A189 /* Vc_3_4_In_Thr.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Vc_3_4_In_Thr.xib; sourceTree = "<group>"; };
+		1CD6CACF2074DE3B0089A189 /* VC34inThrCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC34inThrCell.swift; sourceTree = "<group>"; };
+		1CD6CAD02074DE3B0089A189 /* VC34inThrCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VC34inThrCell.xib; sourceTree = "<group>"; };
 		1CE9891B20689BE100283534 /* Vc_TV_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_TV_In_One.swift; sourceTree = "<group>"; };
 		1CE9891D2068A4F400283534 /* Vc_2_In_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_2_In_One.swift; sourceTree = "<group>"; };
 		1CFA6BE4206A40F900CE4FDC /* ViewController_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_2.swift; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 				1C147A79206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.xib */,
 				1CD6CACB2074B1840089A189 /* Vc_3_4_In_Thr.swift */,
 				1CD6CACC2074B1840089A189 /* Vc_3_4_In_Thr.xib */,
+				1CD6CACF2074DE3B0089A189 /* VC34inThrCell.swift */,
+				1CD6CAD02074DE3B0089A189 /* VC34inThrCell.xib */,
 			);
 			path = Thr;
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 				1C147A6D206E111C00CC542A /* Vc_3_1_In_Thr.xib in Resources */,
 				1CD6CACE2074B1840089A189 /* Vc_3_4_In_Thr.xib in Resources */,
 				1C0878242032AA8200E8A660 /* LaunchScreen.storyboard in Resources */,
+				1CD6CAD22074DE3B0089A189 /* VC34inThrCell.xib in Resources */,
 				1C7F19292068D155004A9060 /* Vc_6_In_One.xib in Resources */,
 				1C147A77206E1BB100CC542A /* Vc_3_3_In_Thr.xib in Resources */,
 				1C147A7B206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.xib in Resources */,
@@ -332,6 +339,7 @@
 				1C7F19282068D155004A9060 /* Vc_6_In_One.swift in Sources */,
 				1C7F191F2068C078004A9060 /* Vc_3_In_One.swift in Sources */,
 				1C147A6C206E111C00CC542A /* Vc_3_1_In_Thr.swift in Sources */,
+				1CD6CAD12074DE3B0089A189 /* VC34inThrCell.swift in Sources */,
 				1C7F192D2068E721004A9060 /* Vc_8_In_One.swift in Sources */,
 				1C147A72206E17BA00CC542A /* Vc_3_2_In_Thr.swift in Sources */,
 				1CD6CACD2074B1840089A189 /* Vc_3_4_In_Thr.swift in Sources */,

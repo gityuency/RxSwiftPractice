@@ -23,6 +23,16 @@ class Vc_3_4_In_Thr: UIViewController {
         super.viewDidLoad()
         
         
+        
+        Observable<Bool>.create { ob -> Disposable in
+            
+            ob.onNext(true)
+            
+            
+            return Disposables.create()
+        }
+        
+        
         resTF.rx.text
             .filter({ string -> Bool in    //在程序启动的时候会订阅一次, 输入框成为第一响应的时候也会订阅一次, 在输入字符较少的时候还会订阅,这些都是无效的字符, 在这里进行过滤
                 if let s = string , s.count > 2 {
