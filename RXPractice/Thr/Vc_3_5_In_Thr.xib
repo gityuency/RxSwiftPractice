@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Vc_3_5_In_Thr" customModule="RXPractice" customModuleProvider="target">
+            <connections>
+                <outlet property="biaoge" destination="G0I-sX-f9c" id="7WG-Aj-ipb"/>
+                <outlet property="button" destination="9vd-8J-rcl" id="3RJ-Vv-jI5"/>
+                <outlet property="shurukuang" destination="j05-HM-Rhk" id="BPh-M1-q4c"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j05-HM-Rhk">
+                    <rect key="frame" x="20" y="40" width="235" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="vxg-UK-UQ0"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G0I-sX-f9c">
+                    <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vd-8J-rcl">
+                    <rect key="frame" x="275" y="40" width="80" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.53878549639999995" blue="0.30024861809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="MBO-ns-iuH"/>
+                        <constraint firstAttribute="height" constant="40" id="Wzq-Ay-YIV"/>
+                    </constraints>
+                    <state key="normal" title="点击刷新">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9vd-8J-rcl" firstAttribute="leading" secondItem="j05-HM-Rhk" secondAttribute="trailing" constant="20" id="43V-BW-TjH"/>
+                <constraint firstItem="9vd-8J-rcl" firstAttribute="centerY" secondItem="j05-HM-Rhk" secondAttribute="centerY" id="CCK-jG-tJm"/>
+                <constraint firstItem="j05-HM-Rhk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XUy-sm-bvi"/>
+                <constraint firstItem="G0I-sX-f9c" firstAttribute="top" secondItem="j05-HM-Rhk" secondAttribute="bottom" constant="20" id="YEw-7e-qiY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="G0I-sX-f9c" secondAttribute="bottom" id="bug-Md-11a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="G0I-sX-f9c" secondAttribute="trailing" id="fz8-DW-S9K"/>
+                <constraint firstItem="G0I-sX-f9c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="g8P-nh-jfz"/>
+                <constraint firstItem="j05-HM-Rhk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="hll-9H-rb6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9vd-8J-rcl" secondAttribute="trailing" constant="20" id="nCI-Vv-eqA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-224" y="-73"/>
+        </view>
+    </objects>
+</document>

@@ -33,6 +33,8 @@
 		1C7F19332068FE89004A9060 /* Vc_11_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F19322068FE89004A9060 /* Vc_11_In_One.swift */; };
 		1C7F1935206905E6004A9060 /* Vc_12_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F1934206905E6004A9060 /* Vc_12_In_One.swift */; };
 		1C7F193720690B52004A9060 /* Vc_13_In_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F193620690B52004A9060 /* Vc_13_In_One.swift */; };
+		1CCD7BF72091D9EC008664FE /* Vc_3_5_In_Thr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCD7BF52091D9EC008664FE /* Vc_3_5_In_Thr.swift */; };
+		1CCD7BF82091D9EC008664FE /* Vc_3_5_In_Thr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CCD7BF62091D9EC008664FE /* Vc_3_5_In_Thr.xib */; };
 		1CD6CACD2074B1840089A189 /* Vc_3_4_In_Thr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6CACB2074B1840089A189 /* Vc_3_4_In_Thr.swift */; };
 		1CD6CACE2074B1840089A189 /* Vc_3_4_In_Thr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD6CACC2074B1840089A189 /* Vc_3_4_In_Thr.xib */; };
 		1CD6CAD12074DE3B0089A189 /* VC34inThrCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6CACF2074DE3B0089A189 /* VC34inThrCell.swift */; };
@@ -78,6 +80,8 @@
 		1C8204A02032E52D00C0A1A6 /* CreateOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CreateOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1C8204A12032EBDB00C0A1A6 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1CCA2B252034053A00363298 /* Operators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Operators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1CCD7BF52091D9EC008664FE /* Vc_3_5_In_Thr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_3_5_In_Thr.swift; sourceTree = "<group>"; };
+		1CCD7BF62091D9EC008664FE /* Vc_3_5_In_Thr.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Vc_3_5_In_Thr.xib; sourceTree = "<group>"; };
 		1CD6CACB2074B1840089A189 /* Vc_3_4_In_Thr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vc_3_4_In_Thr.swift; sourceTree = "<group>"; };
 		1CD6CACC2074B1840089A189 /* Vc_3_4_In_Thr.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Vc_3_4_In_Thr.xib; sourceTree = "<group>"; };
 		1CD6CACF2074DE3B0089A189 /* VC34inThrCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC34inThrCell.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				1CD6CACC2074B1840089A189 /* Vc_3_4_In_Thr.xib */,
 				1CD6CACF2074DE3B0089A189 /* VC34inThrCell.swift */,
 				1CD6CAD02074DE3B0089A189 /* VC34inThrCell.xib */,
+				1CCD7BF52091D9EC008664FE /* Vc_3_5_In_Thr.swift */,
+				1CCD7BF62091D9EC008664FE /* Vc_3_5_In_Thr.xib */,
 			);
 			path = Thr;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 				1CD6CAD22074DE3B0089A189 /* VC34inThrCell.xib in Resources */,
 				1C7F19292068D155004A9060 /* Vc_6_In_One.xib in Resources */,
 				1C147A77206E1BB100CC542A /* Vc_3_3_In_Thr.xib in Resources */,
+				1CCD7BF82091D9EC008664FE /* Vc_3_5_In_Thr.xib in Resources */,
 				1C147A7B206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.xib in Resources */,
 				1C147A73206E17BA00CC542A /* Vc_3_2_In_Thr.xib in Resources */,
 				1C0878212032AA8200E8A660 /* Assets.xcassets in Resources */,
@@ -313,13 +320,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RXPractice/Pods-RXPractice-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +355,7 @@
 				1C147A72206E17BA00CC542A /* Vc_3_2_In_Thr.swift in Sources */,
 				1CD6CACD2074B1840089A189 /* Vc_3_4_In_Thr.swift in Sources */,
 				1C7F19212068C60F004A9060 /* Vc_5_In_One.swift in Sources */,
+				1CCD7BF72091D9EC008664FE /* Vc_3_5_In_Thr.swift in Sources */,
 				1C7F19312068F858004A9060 /* Vc_10_In_One.swift in Sources */,
 				1C147A7A206E24FD00CC542A /* Vc_3_3_SubVC_1_In_Thr.swift in Sources */,
 				1C7F19332068FE89004A9060 /* Vc_11_In_One.swift in Sources */,

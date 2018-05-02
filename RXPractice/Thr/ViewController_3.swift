@@ -20,6 +20,7 @@ class ViewController_3: UIViewController {
         "理解Disposable & DisposeBag",
         "RxSwift UI交互 - I \nRxSwift UI交互 - II \nRxSwift UI交互 - III",
         "基于RxSwift的网络编程 - I",
+        "RxSwift 表格示例代码",
         ]
     
     
@@ -73,7 +74,7 @@ extension ViewController_3: UITableViewDataSource, UITableViewDelegate {
         } else if indexPath.row == 3 {
             vc = Vc_3_4_In_Thr()
         } else if indexPath.row == 4 {
-            //            vc = Vc_6_In_One()
+            vc = Vc_3_5_In_Thr()
         } else if indexPath.row == 5 {
             //            vc = Vc_7_In_One()
         } else if indexPath.row == 6 {
