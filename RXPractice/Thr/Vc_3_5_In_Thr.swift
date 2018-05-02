@@ -26,10 +26,35 @@ class Vc_3_5_In_Thr: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Demo_1()
+        //Demo_1()
+        Demo_2()
         
     }
     
+    
+    //MARK: - 示例代码 2
+    func Demo_2() {
+        biaoge.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        let txtOB = shurukuang.rx.text.orEmpty.asObservable().map { txt -> [YuencySection] in
+            var array = [YuencyItem]()
+            for _ in 0..<txt.count {
+                let item = YuencyItem(number: 666, content: txt)
+                array.append(item)
+            }
+            let section = YuencySection(header: "", numbers: array)
+            return [section]
+        }
+        
+        //创建数据源
+        let dataSource = RxTableViewSectionedReloadDataSource <YuencySection>(configureCell: { (dataSource, tv, indexPath, element) -> UITableViewCell in
+            let cell = tv.dequeueReusableCell(withIdentifier: "Cell")!
+            cell.textLabel?.text = "条目\(indexPath.row)：\(element.content ?? "没有结果")"
+            cell.textLabel?.numberOfLines = 0
+            return cell
+        })
+        //绑定单元格数据
+        txtOB.bind(to: biaoge.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
+    }
     
     
     //MARK: - 示例代码 1
