@@ -22,13 +22,56 @@ class Vc_3_5_In_Thr: UIViewController {
     let disposeBag = DisposeBag()
     
     
+    deinit {
+        printLog("销毁")
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Demo_1()
-        Demo_2()
+        //Demo_2()
+        Demo_3()
+    }
+    
+    
+    //MARK: - 示例代码 3
+    func Demo_3() {
         
+        button.setTitle("点击重置", for: .normal)
+        biaoge.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        let sub1 = PublishSubject<String>()
+        let sub2 = PublishSubject<String>()
+        
+        //按钮事件发出 Subject
+        button.rx.tap.asObservable().subscribe(onNext: { [weak self] in
+            self?.shurukuang.text = ""
+            sub1.onNext("数据重置")
+        }).disposed(by: disposeBag)
+        
+        //输入框事件发出 Subject
+        shurukuang.rx.text.orEmpty.asObservable().filter({ txt -> Bool in
+            return txt.count > 0
+        }).subscribe(onNext: { txt in
+            sub2.onNext(txt)
+        }).disposed(by: disposeBag)
+        
+        //创建数据源
+        let dataSource = RxTableViewSectionedReloadDataSource <YuencySection>(configureCell: { (dataSource, tv, indexPath, element) -> UITableViewCell in
+            let cell = tv.dequeueReusableCell(withIdentifier: "Cell")!
+            cell.textLabel?.text = "\(element.content )"
+            cell.textLabel?.numberOfLines = 0
+            return cell
+        })
+        let ob3 = Observable.of(sub1, sub2).merge().map { txt -> [YuencySection] in
+            let item = YuencyItem(number: 666, content: txt)
+            let arr = [YuencySection(header: "", numbers: [item])]
+            return arr
+        }
+        //绑定单元格数据
+        ob3.bind(to: biaoge.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
     }
     
     
@@ -48,7 +91,7 @@ class Vc_3_5_In_Thr: UIViewController {
         //创建数据源
         let dataSource = RxTableViewSectionedReloadDataSource <YuencySection>(configureCell: { (dataSource, tv, indexPath, element) -> UITableViewCell in
             let cell = tv.dequeueReusableCell(withIdentifier: "Cell")!
-            cell.textLabel?.text = "条目\(indexPath.row)：\(element.content ?? "没有结果")"
+            cell.textLabel?.text = "条目\(indexPath.row)：\(element.content )"
             cell.textLabel?.numberOfLines = 0
             return cell
         })
@@ -68,7 +111,7 @@ class Vc_3_5_In_Thr: UIViewController {
         //创建数据源
         let dataSource = RxTableViewSectionedReloadDataSource <YuencySection>(configureCell: { (dataSource, tv, indexPath, element) -> UITableViewCell in
             let cell = tv.dequeueReusableCell(withIdentifier: "Cell")!
-            cell.textLabel?.text = "条目\(indexPath.row)：\(element.content ?? "没有结果")"
+            cell.textLabel?.text = "条目\(indexPath.row)：\(element.content )"
             return cell
         })
         //绑定单元格数据
@@ -123,7 +166,7 @@ struct YuencyItem {
     let number: Int
     
     //自定义属性
-    var content: String?
+    var content: String
     
 }
 
@@ -136,5 +179,6 @@ extension YuencyItem : IdentifiableType, Equatable {
         return lhs.number == rhs.number
     }
 }
+
 
 
