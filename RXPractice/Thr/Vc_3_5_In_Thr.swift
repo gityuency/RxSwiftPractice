@@ -21,11 +21,6 @@ class Vc_3_5_In_Thr: UIViewController {
     
     let disposeBag = DisposeBag()
     
-    
-    
-    
-    
-    
     deinit {
         printLog("销毁")
     }
